@@ -1,12 +1,12 @@
 # zabbix-server deploy& zabbix-agent2 config
 
-## zabbix server部署docker-compose命令
+## zabbix server部署
 
 ```bash
 # 创建对应的数据目录，数据保存在本地持久化存储的db_data中
 mkdir $PWD/db_data
 mkdir $PWD/grafana_storage
-# 通过docker-compose文件部署zabbix服务
+# 通过docker-compose.yaml文件部署zabbix服务
 docker-compose -p zabbix-server up -d
 ```
 
@@ -73,7 +73,7 @@ UserParameter=self.ck.sync,bash /home/check_ck_sync.sh
 
 shell command可以是使用绝对路径指定的脚本
 
-## 利用gevent协程+paramiko批量对大量server进行zabbix agent 安装及配置
+## 利用gevent协程+paramiko批量对大量linux进行zabbix agent 安装及配置
 
 ```bash
 cd paramiko
