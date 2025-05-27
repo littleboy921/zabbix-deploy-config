@@ -6,7 +6,7 @@ import os
 
 hostfile='SiteA.txt'
 cmd_list=['dnf install zabbix-agent2;systemctl restart zabbix-agent2']
-local_file = 'zabbix-agent2/udcp_check.conf'
+local_file = 'zabbix-agent2/user_check.conf'
 remote_dir = '/etc/zabbix/zabbix_agent2.d/'
 
 # define a generator

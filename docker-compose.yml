@@ -18,7 +18,7 @@ services:
        MYSQL_ROOT_PASSWORD: &db_root_pswd 123456
    zabbix-java-gw:
      container_name: zabbix-java-gateway
-     image: zabbix/zabbix-java-gateway:latest
+     image: zabbix/zabbix-java-gateway:7.2.7-alpine
      restart: always
      networks:
              - zabbix-net
@@ -26,7 +26,7 @@ services:
      container_name: zabbix-server-mysql
      depends_on:
              - db
-     image: zabbix/zabbix-server-mysql:latest
+     image: zabbix/zabbix-server-mysql:7.2.7-alpine
      restart: always
      networks:
              - zabbix-net
@@ -49,7 +49,7 @@ services:
      container_name: zabbix-web-nginx-mysql     
      depends_on:
              - zabbix-server
-     image: zabbix/zabbix-web-nginx-mysql:latest
+     image: zabbix/zabbix-web-nginx-mysql:7.2.7-alpine
      restart: always
      networks:
              - zabbix-net

@@ -1,6 +1,6 @@
 #!/bin/bash
 # description: config zabbix-agent2,enable zabbix-agent2 service
-# author: zhangchiqian@uniontech.com
+# author: zhangchiqian@foxmail.com
 
 # zabbix server ip address,autoregistration
 server_ip=192.168.1.105

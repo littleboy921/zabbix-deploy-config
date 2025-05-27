@@ -2,4 +2,4 @@
 10.6.10.115 root Uos@123$
 10.6.10.121 root Uos@123$
 10.6.10.189 root Uos@123$
-
+10.6.10.222 testuser P@ssw0rd@123
